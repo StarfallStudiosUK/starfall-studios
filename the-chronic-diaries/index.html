@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Chronic Diaries - a chronic illness tracking app by Starfall Studios.">
+  <title>The Chronic Diaries | Starfall Studios</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      color: #f8f3ff;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(200, 175, 255, 0.34), transparent 30%),
+        radial-gradient(circle at 82% 18%, rgba(245, 222, 255, 0.20), transparent 28%),
+        linear-gradient(160deg, #17111f 0%, #251831 48%, #130e1b 100%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .back {
+      color: #d8c9e5;
+      font-size: 0.95rem;
+    }
+
+    .back:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 90px 28px 70px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(216, 184, 255, 0.12);
+      border: 1px solid rgba(225, 202, 255, 0.18);
+      color: #ddc0ff;
+      font-size: 0.8rem;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      font-weight: 500;
+      line-height: 0.98;
+      margin-bottom: 24px;
+      background: linear-gradient(90deg, #ffffff, #d9bcff, #f0dfff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #d5c9de;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+    .content {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 20px 28px 100px;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.065);
+      border: 1px solid rgba(228, 205, 255, 0.16);
+      border-radius: 26px;
+      padding: 34px;
+      margin-bottom: 26px;
+      backdrop-filter: blur(12px);
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .panel p {
+      color: #cfc3d8;
+      line-height: 1.8;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .feature h3 {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .feature p {
+      color: #bfb2c8;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      padding: 30px 20px 40px;
+      color: #998da3;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">✦ Starfall Studios</div>
+    <a class="back" href="../">← Back to projects</a>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <span class="status">In development</span>
+
+      <h1>The Chronic Diaries</h1>
+
+      <p class="tagline">
+        A thoughtful offline-first health and wellbeing tracker designed
+        around the realities of living with chronic illness.
+      </p>
+    </section>
+
+    <section class="content">
+
+      <div class="panel">
+        <h2>About The Chronic Diaries</h2>
+        <p>
+          The Chronic Diaries is being designed to make tracking health feel
+          more useful, more personal and less clinical. It focuses on everyday
+          patterns, symptoms and wellbeing in a way that respects limited
+          energy and changing capacity.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2>Planned Features</h2>
+
+        <div class="features">
+
+          <div class="feature">
+            <h3>Symptom Tracking</h3>
+            <p>
+              Record symptoms and changes over time without turning the app
+              into another exhausting task.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>Energy & Wellbeing</h3>
+            <p>
+              Track how you feel across days and notice patterns that might
+              otherwise be difficult to spot.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>Offline First</h3>
+            <p>
+              Designed to remain useful without depending on a constant
+              internet connection.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>Built for Real Life</h3>
+            <p>
+              A calmer, more flexible approach to health tracking for people
+              whose capacity can vary from day to day.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Starfall Studios. The Chronic Diaries is a Starfall Studios project.
+  </footer>
+
+</body>
+</html>
