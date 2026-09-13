@@ -118,9 +118,11 @@
       text-decoration: none;
       color: inherit;
       display: block;
+      height: 100%;
     }
 
     .card {
+      height: 100%;
       background: rgba(255, 255, 255, 0.07);
       border: 1px solid rgba(228, 205, 255, 0.18);
       border-radius: 24px;
@@ -133,6 +135,16 @@
     .card:hover {
       transform: translateY(-4px);
       border-color: rgba(228, 205, 255, 0.38);
+    }
+
+    .card-logo {
+      width: 82px;
+      height: 82px;
+      object-fit: cover;
+      border-radius: 20px;
+      display: block;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
     }
 
     .status {
@@ -231,31 +243,43 @@
       <div class="grid">
 
         <a href="lordslight/" class="card-link">
-  <article class="card">
-    <span class="status">In development</span>
-    <h3>LordsLight</h3>
-    <p>
-      An upcoming Starfall Studios app currently in development.
-      Further details will be revealed at a later date.
-    </p>
-  </article>
-</a>
+          <article class="card">
+            <span class="status">In development</span>
+
+            <h3>LordsLight</h3>
+
+            <p>
+              An upcoming Starfall Studios app currently in development.
+              Further details will be revealed at a later date.
+            </p>
+          </article>
+        </a>
 
         <a href="pocket-troves/" class="card-link">
-  <article class="card">
-    <span class="status">In development</span>
-    <h3>Pocket Troves</h3>
-    <p>
-      A cosy collection app for cataloguing treasured things,
-      organising collections and keeping track of the stories behind them.
-    </p>
-  </article>
-</a>
+          <article class="card">
+            <span class="status">In development</span>
+
+            <h3>Pocket Troves</h3>
+
+            <p>
+              A cosy collection app for cataloguing treasured things,
+              organising collections and keeping track of the stories behind them.
+            </p>
+          </article>
+        </a>
 
         <a href="avelara/" class="card-link">
           <article class="card">
+
+            <img
+              src="assets/Avelara.png"
+              alt="Avelara app logo"
+              class="card-logo">
+
             <span class="status">In development</span>
+
             <h3>Avelara</h3>
+
             <p>
               A beautiful local media library for organising and enjoying
               personal film and media collections.
@@ -264,15 +288,23 @@
         </a>
 
         <a href="the-chronic-diaries/" class="card-link">
-  <article class="card">
-    <span class="status">In development</span>
-    <h3>The Chronic Diaries</h3>
-    <p>
-      An offline-first health and wellbeing tracker designed around
-      life with chronic illness.
-    </p>
-  </article>
-</a>
+          <article class="card">
+
+            <img
+              src="assets/The-Chronic-Diaries.png"
+              alt="The Chronic Diaries app logo"
+              class="card-logo">
+
+            <span class="status">In development</span>
+
+            <h3>The Chronic Diaries</h3>
+
+            <p>
+              An offline-first health and wellbeing tracker designed around
+              life with chronic illness.
+            </p>
+          </article>
+        </a>
 
       </div>
     </section>
