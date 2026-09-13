@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avelara - a beautiful local media library by Starfall Studios.">
+  <title>Avelara | Starfall Studios</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      color: #f8f3ff;
+      background:
+        radial-gradient(circle at 25% 15%, rgba(196, 167, 255, 0.35), transparent 30%),
+        radial-gradient(circle at 80% 15%, rgba(244, 220, 255, 0.22), transparent 28%),
+        linear-gradient(160deg, #15101d 0%, #24172f 48%, #120d19 100%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .back {
+      color: #d8c9e5;
+      font-size: 0.95rem;
+    }
+
+    .back:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 90px 28px 70px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(216, 184, 255, 0.12);
+      border: 1px solid rgba(225, 202, 255, 0.18);
+      color: #ddc0ff;
+      font-size: 0.8rem;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(4rem, 10vw, 7rem);
+      font-weight: 500;
+      line-height: 0.95;
+      margin-bottom: 24px;
+      background: linear-gradient(90deg, #ffffff, #d8b9ff, #f0ddff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #d5c9de;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+    .content {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 20px 28px 100px;
+    }
+
+    .panel {
+      background: rgba(255,255,255,0.065);
+      border: 1px solid rgba(228,205,255,0.16);
+      border-radius: 26px;
+      padding: 34px;
+      margin-bottom: 26px;
+      backdrop-filter: blur(12px);
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .panel p {
+      color: #cfc3d8;
+      line-height: 1.8;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .feature h3 {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .feature p {
+      color: #bfb2c8;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      padding: 30px 20px 40px;
+      color: #998da3;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">✦ Starfall Studios</div>
+    <a class="back" href="../">← Back to projects</a>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <span class="status">In development</span>
+
+      <h1>Avelara</h1>
+
+      <p class="tagline">
+        A beautifully designed local media library for organising,
+        exploring and enjoying your personal film and media collection.
+      </p>
+    </section>
+
+    <section class="content">
+
+      <div class="panel">
+        <h2>About Avelara</h2>
+        <p>
+          Avelara is being designed as a calm, elegant home for local media.
+          Instead of treating personal collections like folders on a drive,
+          Avelara aims to make them feel like a real library: visual, organised
+          and enjoyable to browse.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2>Planned Features</h2>
+
+        <div class="features">
+          <div class="feature">
+            <h3>Personal Media Library</h3>
+            <p>
+              Organise locally stored films and media into a polished,
+              easy-to-browse collection.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>Continue Watching</h3>
+            <p>
+              Resume recently watched media from a dedicated homepage section.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>Beautiful Browsing</h3>
+            <p>
+              A visual interface designed to feel more like a streaming library
+              than a file browser.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>Built Around Your Collection</h3>
+            <p>
+              Designed for personal libraries rather than subscription-based
+              streaming services.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Starfall Studios. Avelara is a Starfall Studios project.
+  </footer>
+
+</body>
+</html>
