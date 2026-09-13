@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Starfall Studios - independent app studio creating thoughtful, useful and beautifully designed apps.">
+  <title>Starfall Studios</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(205, 180, 255, 0.35), transparent 32%),
+        radial-gradient(circle at 80% 20%, rgba(235, 211, 255, 0.25), transparent 28%),
+        linear-gradient(160deg, #181222 0%, #241832 45%, #16101f 100%);
+      color: #f8f3ff;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 24px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 24px;
+      color: #ddd0eb;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 100px 28px 80px;
+    }
+
+    .sparkle {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 500;
+      line-height: 0.95;
+      margin-bottom: 24px;
+      background: linear-gradient(90deg, #ffffff, #d7b8ff, #f0dfff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #d6cadf;
+    }
+
+    .projects {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 28px 100px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      text-align: center;
+      color: #bfb1c9;
+      margin-bottom: 42px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(228, 205, 255, 0.18);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(228, 205, 255, 0.38);
+    }
+
+    .status {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(213, 181, 255, 0.12);
+      color: #dcbfff;
+      font-size: 0.78rem;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.65rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #cfc3d8;
+      line-height: 1.7;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 28px 100px;
+      text-align: center;
+    }
+
+    .about p {
+      margin-top: 18px;
+      color: #cabfd3;
+      line-height: 1.8;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      padding: 30px 20px 40px;
+      color: #9f91aa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 20px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">✦ Starfall Studios</div>
+
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="sparkle">✦</div>
+
+      <h1>Starfall Studios</h1>
+
+      <p class="tagline">
+        An independent UK app studio creating thoughtful, useful and
+        beautifully designed digital experiences.
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section-title">Our Projects</h2>
+
+      <p class="section-intro">
+        Apps currently being developed under Starfall Studios.
+      </p>
+
+      <div class="grid">
+
+        <article class="card">
+          <span class="status">In development</span>
+          <h3>LordsLight</h3>
+          <p>
+            A household dashboard designed to bring calendars, lists,
+            routines and family organisation together in one beautiful place.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="status">In development</span>
+          <h3>Pocket Troves</h3>
+          <p>
+            A cosy collection app for cataloguing treasured things,
+            organising collections and keeping track of the stories behind them.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="status">In development</span>
+          <h3>Avelara</h3>
+          <p>
+            A beautiful local media library for organising and enjoying
+            personal film and media collections.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="status">In development</span>
+          <h3>The Chronic Diaries</h3>
+          <p>
+            An offline-first health and wellbeing tracker designed around
+            life with chronic illness.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">About Starfall Studios</h2>
+
+      <p>
+        Starfall Studios is an independent UK developer focused on creating
+        apps that solve real problems without losing personality, accessibility
+        or thoughtful design.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Starfall Studios. All project names and associated concepts belong to Starfall Studios.
+  </footer>
+
+</body>
+</html>
